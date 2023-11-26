@@ -1,13 +1,14 @@
-import { useState } from 'react'
 import TabButton from './TabButton';
+import Jl from './jiangli';
 
 function App() {
-    const [count, setCount] = useState(0)
 
     return (
         <>
             {/* tab按钮 */}
             <TabButton></TabButton>
+            {/* 奖励 */}
+            <Jl></Jl>
         </>
     )
 }

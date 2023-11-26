@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@ant-design/icons': ^5.2.6
   '@tailwindcss/ui': ^0.7.2
   '@types/react': ^18.2.37
   '@types/react-dom': ^18.2.15
@@ -21,6 +22,7 @@ specifiers:
   vite: ^5.0.0
 
 dependencies:
+  '@ant-design/icons': 5.2.6_biqbaboplfbrettd7655fr4n2y
   '@tailwindcss/ui': 0.7.2
   antd: 5.11.4_biqbaboplfbrettd7655fr4n2y
   axios: 1.6.2
