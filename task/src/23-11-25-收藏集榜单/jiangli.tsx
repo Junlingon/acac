@@ -2,12 +2,14 @@ import React from 'react';
 import { Avatar, Flex } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 
+import './style/jl.css';
+
 const Jl: React.FC = () => (
     <>
         <div className='warp'>
             <div className='tittle'>最受欢迎单人冠军奖励</div>
             <div className="content">
-                <Flex>
+                <Flex justify='space-between'>
                     <div className="jl">
                         <div className="order">专属奖励x</div>
                         <div className="tx">
