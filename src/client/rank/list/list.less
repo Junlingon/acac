@@ -1,0 +1,76 @@
+.dress-award-list-bottom-list {
+    border: 1.5px solid #FAF8E4;
+    border-radius: 27px;
+    box-sizing: border-box;
+    margin-top: 32px;
+    padding: 28px;
+    border-radius: 27px;
+    position: relative;
+
+    &-header {
+        height: 95px;
+        margin: 0px auto;
+    }
+
+    &-tittle {
+        background: linear-gradient(180deg, #BBAC9C 0%, #EEE6D7 78.84%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        &::after {
+            content: '';
+            width: 56px;
+            height: 22px;
+            display: inline-block;
+            background-image: url('https://i0.hdslb.com/bfs/activity-plat/static/20231127/d3de01ea5b5200083302ca865c89375d/gWt1rsp3NL.png');
+            background-size: 56px 22px;
+            margin-left: 10px;
+        }
+
+        &::before {
+            content: '';
+            width: 56px;
+            height: 22px;
+            display: inline-block;
+            background-image: url('https://i0.hdslb.com/bfs/activity-plat/static/20231127/d3de01ea5b5200083302ca865c89375d/gWt1rsp3NL.png');
+            background-size: 56px 22px;
+            margin-right: 10px;
+            transform: rotate(180deg);
+        }
+    }
+
+    &-border {
+        width: 440px;
+        height: 12px;
+        background: url('https://i0.hdslb.com/bfs/activity-plat/static/20231128/d3de01ea5b5200083302ca865c89375d/I45iebqTP5.png') no-repeat;
+        background-size: 440px 12px;
+        margin: 0 auto;
+    }
+
+    &-desc {
+        color: #F5FAFF;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &-vote-warp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .empty{
+            width: 217px;
+            height: 314px;
+            background: url('https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/l72TVFmKKN.png') no-repeat;
+            background-size: cover;
+        }
+    }
+}

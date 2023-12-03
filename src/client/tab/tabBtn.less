@@ -1,0 +1,80 @@
+.common-tab-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.main-tab-btn {
+  width: 205.4px;
+  height: 53.7px;
+  background-image: url(https://i0.hdslb.com/bfs/activity-plat/static/20231128/55e8b7702babcaa954cb4a844e5ce05e/py9aXub78L.png);
+  &.active {
+    background-image: url(https://i0.hdslb.com/bfs/activity-plat/static/20231127/55e8b7702babcaa954cb4a844e5ce05e/HNO09fj1PH.png);
+    &::after {
+      content: '';
+      position: absolute;
+      left: -9.5px;
+      top: 50%;
+      width: 25.2px;
+      height: 10.6px;
+      background-image: url(https://i0.hdslb.com/bfs/activity-plat/static/20231127/55e8b7702babcaa954cb4a844e5ce05e/nR1ZcX1Yxt.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      transform: translateY(-50%);
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      right: -9.5px;
+      top: 50%;
+      width: 25.2px;
+      height: 10.6px;
+      background-image: url(https://i0.hdslb.com/bfs/activity-plat/static/20231127/55e8b7702babcaa954cb4a844e5ce05e/nR1ZcX1Yxt.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      transform: translateY(-50%) rotate(180deg);
+    }
+    .main-tab-btn-text {
+      background: linear-gradient(180deg, #3D372A 0%, #68593B 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .main-tab-btn-text {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #C1B191 0%, #EEE6D6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.sub-tab-btn {
+  width: 181.4px;
+  height: 47.4px;
+  background-image: url(https://i0.hdslb.com/bfs/activity-plat/static/20231128/55e8b7702babcaa954cb4a844e5ce05e/JbPTMd8Aum.png);
+  &.active {
+    background-image: url(https://i0.hdslb.com/bfs/activity-plat/static/20231127/55e8b7702babcaa954cb4a844e5ce05e/HNO09fj1PH.png);
+    .sub-tab-btn-text {
+      background: linear-gradient(180deg, #3D372A 0%, #68593B 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .sub-tab-btn-text {
+    text-align: center;
+    font-size: 22.9px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #C1B191 0%, #EEE6D6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

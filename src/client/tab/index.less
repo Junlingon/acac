@@ -1,0 +1,43 @@
+.dress-award-list-top {
+  width: 750px;
+  // height: 712px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  margin-top: 30px;
+  .top-main-tab-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+  }
+  .top-sub-tab-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 27.5px;
+  }
+  &.tab-extra-style-1 {
+    .top-sub-tab-container {
+      .sub-tab-btn {
+        &:nth-child(1) {
+          margin-right: -182px;
+        }
+      }
+    }
+  }
+  &.tab-extra-style-2 {
+    .top-sub-tab-container {
+      .sub-tab-btn {
+        width: 156px;
+        height: 42.77px;
+        .sub-tab-btn-text {
+          font-size: 19.1px;
+        }
+      }
+    }
+  }
+}
