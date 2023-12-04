@@ -15,13 +15,18 @@ const Top = () => {
   const [config] = useAtom(configAtom)
   const [curMainTab, setCurMainTab] = useAtom(curMainTabAtom)
   const [curSubTab, setCurSubTab] = useAtom(curSubTabAtom)
+  // 这里改了-----------------
   const [Tabs, setTabs] = useAtom(TabsAtom)
-
+  // 这里改了-----------------
   useEffect(() => {
     if (config) {
       console.log('config:', config)
       const { mainTabs = [] } = config;
+      // 这里改了-----------------
       setTabs(mainTabs);
+      setCurMainTab(mainTabs[0]);
+      setCurSubTab(mainTabs[0].subTabs[0])
+      // 这里改了-----------------
       console.log('888888888', mainTabs)
     }
   }, [config])
@@ -37,7 +42,7 @@ const Top = () => {
     setCurSubTab(item)
   }
 
-  return (Tabs.length !== 0 ?
+  return (Tabs.length !== 0 &&
     <div className={`dress-award-list-top ${[Tabs[0].value, Tabs[1]?.value].includes(curMainTab.value) ? 'tab-extra-style-1' : 'tab-extra-style-2'}`}>
       <div className="top-main-tab-container">
         {Tabs.map((item) => (
@@ -61,7 +66,7 @@ const Top = () => {
           />
         ))}
       </div>
-    </div> : null
+    </div>
   )
 }
 
