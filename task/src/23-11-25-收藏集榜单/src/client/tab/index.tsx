@@ -6,39 +6,23 @@ import {
   configAtom,
   curMainTabAtom,
   curSubTabAtom,
-  mainTabsAtom
+  TabsAtom
 } from '../../jotai/common'
 
 import './index.less'
-
-type curMainTabAtom2={
-  _index?: number;
-  name: string;
-  value?: number;
-  subTabs?: {
-      name?: string;
-      value?: number;
-      awardTittle?: string;
-      rankTittle?: string;
-      awardList?: {
-          name?: string;
-          image?: string;
-      }[];
-  }[];
-}
 
 const Top = () => {
   const [config] = useAtom(configAtom)
   const [curMainTab, setCurMainTab] = useAtom(curMainTabAtom)
   const [curSubTab, setCurSubTab] = useAtom(curSubTabAtom)
-  const [mainTabs, setMainTabs] = useAtom(mainTabsAtom)
+  const [Tabs, setTabs] = useAtom(TabsAtom)
 
   useEffect(() => {
     if (config) {
       console.log('config:', config)
-      const {mainTabs = []}=config;
-      setMainTabs(mainTabs);
-      console.log('888888888',mainTabs)
+      const { mainTabs = [] } = config;
+      setTabs(mainTabs);
+      console.log('888888888', mainTabs)
     }
   }, [config])
 
@@ -53,10 +37,10 @@ const Top = () => {
     setCurSubTab(item)
   }
 
-  return (mainTabs.length!==0 ?
-    <div className={`dress-award-list-top ${[mainTabs[0].value, mainTabs[1]?.value].includes(curMainTab.value) ? 'tab-extra-style-1' : 'tab-extra-style-2'}`}>
+  return (Tabs.length !== 0 ?
+    <div className={`dress-award-list-top ${[Tabs[0].value, Tabs[1]?.value].includes(curMainTab.value) ? 'tab-extra-style-1' : 'tab-extra-style-2'}`}>
       <div className="top-main-tab-container">
-        {mainTabs.map((item) => (
+        {Tabs.map((item) => (
           <TabBtn
             key={item.value}
             text={item.name}
@@ -77,7 +61,7 @@ const Top = () => {
           />
         ))}
       </div>
-    </div>:null
+    </div> : null
   )
 }
 

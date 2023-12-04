@@ -10,3 +10,21 @@ export interface Image {
   height: number
   width: number
 }
+
+export interface ICurMainTab {
+  _index?: number;
+  name: string;
+  value?: number;
+  subTabs?: ICurSubTab[]
+}
+
+export interface ICurSubTab {
+  name?: string;
+  value?: number;
+  awardTittle?: string;
+  rankTittle?: string;
+  awardList?: {
+    name?: string;
+    image?: string;
+  }[];
+}
