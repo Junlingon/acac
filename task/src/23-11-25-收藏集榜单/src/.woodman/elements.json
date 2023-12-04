@@ -1,0 +1,65 @@
+{
+  "framework": "react@16",
+  "name": "slider",
+  "pageId": "woodman_dev",
+  "uniqId": "woodman_dev_uniqid",
+  "davinci": "http://davinci-cms.bilibili.co/activity/index.html",
+  "elements": {
+    "groupOrder": [
+      "g_jtfdzqvo"
+    ],
+    "metas": {},
+    "defaultValues": {
+      "e_jtfe0ccn": "123"
+    },
+    "groups": {
+      "g_jtfdzqvo": {
+        "gid": "g_jtfdzqvo",
+        "elementKey": "Group",
+        "name": "g_jtfdzqvo",
+        "label": "react 样本配置",
+        "elements": [
+          "e_jtfe0ccn"
+        ]
+      }
+    },
+    "elements": {
+      "e_jtfe0ccn": {
+        "gid": "g_jtfdzqvo",
+        "eid": "e_jtfe0ccn",
+        "label": "配置一",
+        "elementKey": "EText",
+        "name": "foo"
+      }
+    },
+    "version": 5
+  },
+  "version": 6,
+  "schema": {
+    "schemas": {
+      "root": {
+        "key": "root",
+        "type": "object",
+        "w_type": "w_root",
+        "description": "介绍",
+        "label": "所有配置"
+      }
+    },
+    "structure": {
+      "root": {
+        "_id": "root",
+        "childs": []
+      }
+    },
+    "defaultValue": {
+      "config": {
+        "frontRewardsTitle": {
+          "url": "//i0.hdslb.com/bfs/activity-plat/static/d41d8cd98f00b204e9800998ecf8427e/CW6dERa6Xr.png",
+          "width": 980,
+          "height": 80
+        }
+      },
+      "async": {}
+    }
+  }
+}

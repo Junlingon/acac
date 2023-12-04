@@ -1,0 +1,92 @@
+.dress-award-list-bottom-warp {
+    border: 1.5px solid #FAF8E4;
+    border-radius: 27px;
+    box-sizing: border-box;
+    padding: 28px;
+    border-radius: 27px;
+    position: relative;
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        margin: 0 auto;
+        top: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 86px;
+        height: 21px;
+        display: inline-block;
+        background-image: url('https://i0.hdslb.com/bfs/activity-plat/static/20231128/d3de01ea5b5200083302ca865c89375d/xp5ohy9sZM.png');
+        background-size: 86px 21px;
+    }
+
+    &-tittle {
+        background: linear-gradient(180deg, #BBAC9C 0%, #EEE6D7 78.84%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 4px;
+
+        &::after {
+            content: '';
+            width: 56px;
+            height: 22px;
+            display: inline-block;
+            background-image: url('https://i0.hdslb.com/bfs/activity-plat/static/20231127/d3de01ea5b5200083302ca865c89375d/gWt1rsp3NL.png');
+            background-size: 56px 22px;
+            margin-left: 10px;
+        }
+
+        &::before {
+            content: '';
+            width: 56px;
+            height: 22px;
+            display: inline-block;
+            background-image: url('https://i0.hdslb.com/bfs/activity-plat/static/20231127/d3de01ea5b5200083302ca865c89375d/gWt1rsp3NL.png');
+            background-size: 56px 22px;
+            margin-right: 10px;
+            transform: rotate(180deg);
+        }
+    }
+
+    &-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &-item{
+            height: 280px; 
+        }
+    }
+
+    &-order {
+        color: #F5FAFF;
+        text-align: center;
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 18px;
+    }
+
+    &-avt {
+        width: 190px;
+        height: 194px;
+        margin: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &-name {
+        color: #F5FAFF;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        max-width: 230px;
+        margin: 0 auto;
+        white-space: pre-line;
+    }
+}

@@ -1,0 +1,120 @@
+.dress-award-list-bottom-list-vote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &+&{
+        padding-left: 21px;       
+    }
+
+    &-icon {
+        width: 30px;
+        height: 39px;
+        padding-top: 2px;
+        margin-bottom: 12px;
+        background-size: 30px 39px;
+
+        &.gold {
+            width: 36px;
+            height: 46px;
+            background-image: url('https://i0.hdslb.com/bfs/activity-plat/static/20231128/d3de01ea5b5200083302ca865c89375d/Tw2nxnge6G.png');
+            background-size: 36px 46px;
+            padding-top: 5px;
+        }
+        &.gold1{
+            background-image: url('https://i0.hdslb.com/bfs/activity-plat/static/20231128/d3de01ea5b5200083302ca865c89375d/Tw2nxnge6G.png');
+        }
+
+        &.silver {
+            background-image: url('https://i0.hdslb.com/bfs/activity-plat/static/20231128/d3de01ea5b5200083302ca865c89375d/2qwBVOUuSG.png');
+        }
+
+        &.bronze {
+            background-image: url('https://i0.hdslb.com/bfs/activity-plat/static/20231128/d3de01ea5b5200083302ca865c89375d/F8pZj2zAaL.png');
+        }
+    }
+
+
+    &-collections {
+        position: relative;
+        width: 200px;
+        height: 270px;
+        flex-shrink: 0;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('https://i0.hdslb.com/bfs/activity-plat/static/20231128/d3de01ea5b5200083302ca865c89375d/sp0N57zUKm.png') no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .image {
+            // background: url('https://i0.hdslb.com/bfs/activity-plat/static/20231127/d3de01ea5b5200083302ca865c89375d/trubwABAF6.png') no-repeat;
+            background-size: cover;
+            width: 192px;
+            height: 258px;
+            border-radius: 12px;
+        }
+
+        &.gold {
+            width: 216px;
+            height: 291px;
+            background-size: 216px 291px;
+
+            .image {
+                width: 208px;
+                height: 280px;
+            }
+        }
+
+        .linear {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 158px;
+            border-radius: 9px;
+            opacity: 0.8;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.10) 100%), linear-gradient(180deg, rgba(183, 165, 129, 0.00) 16.2%, #665A44 59.45%, #584B37 102.34%), linear-gradient(180deg, rgba(183, 165, 129, 0.00) 22.46%, #745E34 69.09%, #745A34 102.34%), linear-gradient(180deg, rgba(183, 165, 129, 0.00) 35.34%, #343B74 69.09%, #343B74 102.34%);
+        }
+
+        &-text {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            text-align: center;
+
+            &-name {
+                font-size: 28px;
+                font-weight: 700;
+                color: #FAF8E4;
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding: 4px 10px;
+            }
+
+            &-points {
+                color: #F5FAFF;
+                text-align: center;
+                font-size: 20px;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &-btn {
+        width: 186px;
+        height: 44px;
+        background: url('https://i0.hdslb.com/bfs/activity-plat/static/20231128/d3de01ea5b5200083302ca865c89375d/LWa05P8oOl.png') no-repeat;
+        background-size: cover;
+        margin-top: 30px;
+    }
+}
