@@ -11,9 +11,9 @@ const Award = () => {
 
     return <>
         <div className={`${className}`}>
-            <div className={`${className}-tittle`}>{curSubTab.awardTittle}</div>
+            {curSubTab && <div className={`${className}-tittle`}>{curSubTab.awardTittle}</div>}
             <div className={`${className}-content`}>
-                {curSubTab.awardList.map((item) => (
+                {curSubTab && curSubTab.awardList && curSubTab.awardList.map((item) => (
                     <div className={`${className}-content-item`} key={item.name}>
                         <div className={`${className}-avt`} style={{ backgroundImage: `url(${item.image}) ` }}></div>
                         <div className={`${className}-name`}>{item.name}</div>

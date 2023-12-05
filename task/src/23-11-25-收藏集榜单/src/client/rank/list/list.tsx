@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useAtom } from 'jotai';
 
 import {
+  configAtom,
   curMainTabAtom,
   curSubTabAtom,
   curListDataAtom
@@ -16,11 +17,13 @@ import './list.less';
 let fetchListPromise: any = null
 
 const List = () => {
+  const [config] = useAtom(configAtom)
   const [curMainTab] = useAtom(curMainTabAtom);
   const [curSubTab] = useAtom(curSubTabAtom);
   const [dataList, setDataList] = useAtom(curListDataAtom);
   const [page, setPage] = useState(2);
   const [isShowMore, setIsShowMore] = useState(true);
+  const [listWrite, setListWrite] = useState('');
 
   const className = 'dress-award-list-bottom-list';
 
@@ -66,12 +69,19 @@ const List = () => {
     setPage(2);
   }, [curMainTab, curSubTab])
 
+  useEffect(()=>{
+    if(config){
+      const { listWrite }=config
+      setListWrite(listWrite)
+    }
+  },[config])
+
   return (
     <div className={`${className}`}>
       <div className={`${className}-header`}>
-        <div className={`${className}-tittle`}>{curSubTab.rankTittle}</div>
+        {curSubTab && <div className={`${className}-tittle`}>{curSubTab.rankTittle}</div>}
         <div className={`${className}-border`}></div>
-        <div className={`${className}-desc`}>12月8月-12月31日收藏集抽奖数累计</div>
+        <div className={`${className}-desc`}>{listWrite}</div>
       </div>
       {
         dataList && dataList.length !== 0 ?

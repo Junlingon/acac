@@ -1,0 +1,437 @@
+{
+  "framework": "react@16",
+  "name": "slider",
+  "pageId": "woodman_dev",
+  "uniqId": "woodman_dev_uniqid",
+  "davinci": "http://davinci-cms.bilibili.co/activity/index.html",
+  "elements": {
+    "groupOrder": [
+      "g_jtfdzqvo"
+    ],
+    "metas": {},
+    "defaultValues": {
+      "e_jtfe0ccn": "123"
+    },
+    "groups": {
+      "g_jtfdzqvo": {
+        "gid": "g_jtfdzqvo",
+        "elementKey": "Group",
+        "name": "g_jtfdzqvo",
+        "label": "react 样本配置",
+        "elements": [
+          "e_jtfe0ccn"
+        ]
+      }
+    },
+    "elements": {
+      "e_jtfe0ccn": {
+        "gid": "g_jtfdzqvo",
+        "eid": "e_jtfe0ccn",
+        "label": "配置一",
+        "elementKey": "EText",
+        "name": "foo"
+      }
+    },
+    "version": 5
+  },
+  "version": 6,
+  "schema": {
+    "schemas": {
+      "root": {
+        "key": "root",
+        "type": "object",
+        "w_type": "w_root",
+        "description": "介绍",
+        "label": "所有配置"
+      },
+      "bHY8SPlQGQ": {
+        "type": "string",
+        "w_type": "w_input",
+        "label": "头图链接",
+        "key": "HeadImg",
+        "required": true
+      },
+      "zi7FnjiKxE": {
+        "type": "string",
+        "w_type": "w_input",
+        "label": "活动日期图片链接",
+        "key": "HeadLine",
+        "required": true
+      },
+      "RbdNc48p32": {
+        "type": "array",
+        "w_type": "w_group",
+        "label": "静态配置",
+        "key": "mainTabs",
+        "required": true,
+        "description": "切换按钮以及奖励配置"
+      },
+      "LXI2HpyN75": {
+        "type": "string",
+        "w_type": "w_input",
+        "label": "主按钮名称",
+        "key": "name",
+        "required": true
+      },
+      "zG3fQwGp7f": {
+        "type": "number",
+        "w_type": "w_input",
+        "label": "rank_type",
+        "key": "value",
+        "required": true,
+        "description": "后端接口参数"
+      },
+      "6hHtRN0Uv6": {
+        "type": "array",
+        "w_type": "w_group",
+        "label": "对应的副按钮",
+        "key": "subTabs",
+        "required": true
+      },
+      "JkCshT4qG5": {
+        "type": "string",
+        "w_type": "w_input",
+        "label": "副按钮名称",
+        "key": "name"
+      },
+      "jsI5dHQdrl": {
+        "type": "number",
+        "w_type": "w_input",
+        "label": "sub_rank_type",
+        "key": "value",
+        "description": "后端接口参数"
+      },
+      "1WoRQRT8ml": {
+        "type": "string",
+        "w_type": "w_input",
+        "label": "奖励标题",
+        "key": "awardTittle"
+      },
+      "upYwYcIQs0": {
+        "type": "string",
+        "w_type": "w_input",
+        "label": "榜单标题",
+        "key": "rankTittle"
+      },
+      "un06rZLqcV": {
+        "type": "array",
+        "w_type": "w_group",
+        "label": "奖励数据",
+        "key": "awardList",
+        "required": false
+      },
+      "vG87qRcKpo": {
+        "type": "string",
+        "w_type": "w_input",
+        "label": "奖励名称",
+        "key": "name"
+      },
+      "95imdRFGBT": {
+        "type": "string",
+        "w_type": "w_input",
+        "label": "奖励图片链接",
+        "key": "image"
+      },
+      "oygWerIxPr": {
+        "type": "number",
+        "w_type": "w_input",
+        "label": "下标",
+        "key": "_index"
+      },
+      "2QNlp17VyD": {
+        "type": "string",
+        "w_type": "w_input",
+        "label": "榜单日期文案",
+        "key": "listWrite"
+      }
+    },
+    "structure": {
+      "root": {
+        "_id": "root",
+        "childs": [
+          "bHY8SPlQGQ",
+          "zi7FnjiKxE",
+          "2QNlp17VyD",
+          "RbdNc48p32"
+        ]
+      },
+      "bHY8SPlQGQ": {
+        "_id": "bHY8SPlQGQ"
+      },
+      "zi7FnjiKxE": {
+        "_id": "zi7FnjiKxE"
+      },
+      "RbdNc48p32": {
+        "_id": "RbdNc48p32",
+        "childs": [
+          "LXI2HpyN75",
+          "zG3fQwGp7f",
+          "6hHtRN0Uv6",
+          "oygWerIxPr"
+        ]
+      },
+      "LXI2HpyN75": {
+        "_id": "LXI2HpyN75"
+      },
+      "zG3fQwGp7f": {
+        "_id": "zG3fQwGp7f"
+      },
+      "6hHtRN0Uv6": {
+        "_id": "6hHtRN0Uv6",
+        "childs": [
+          "JkCshT4qG5",
+          "jsI5dHQdrl",
+          "1WoRQRT8ml",
+          "upYwYcIQs0",
+          "un06rZLqcV"
+        ]
+      },
+      "JkCshT4qG5": {
+        "_id": "JkCshT4qG5"
+      },
+      "jsI5dHQdrl": {
+        "_id": "jsI5dHQdrl"
+      },
+      "1WoRQRT8ml": {
+        "_id": "1WoRQRT8ml"
+      },
+      "upYwYcIQs0": {
+        "_id": "upYwYcIQs0"
+      },
+      "un06rZLqcV": {
+        "_id": "un06rZLqcV",
+        "childs": [
+          "vG87qRcKpo",
+          "95imdRFGBT"
+        ]
+      },
+      "vG87qRcKpo": {
+        "_id": "vG87qRcKpo"
+      },
+      "95imdRFGBT": {
+        "_id": "95imdRFGBT"
+      },
+      "oygWerIxPr": {
+        "_id": "oygWerIxPr"
+      },
+      "2QNlp17VyD": {
+        "_id": "2QNlp17VyD"
+      }
+    },
+    "defaultValue": {
+      "config": {
+        "HeadImg": "https://i0.hdslb.com/bfs/activity-plat/static/20231204/d3de01ea5b5200083302ca865c89375d/q28CPpPTRm.png",
+        "HeadLine": "https://i0.hdslb.com/bfs/activity-plat/static/20231204/d3de01ea5b5200083302ca865c89375d/SeO66wa5ss.png",
+        "listWrite": "12月11月-12月31日收藏集抽奖数累计",
+        "mainTabs": [
+          {
+            "name": "最受欢迎",
+            "value": 100,
+            "subTabs": [
+              {
+                "name": "单人",
+                "value": 11,
+                "awardTittle": "最受欢迎单人冠军奖励",
+                "rankTittle": "最受欢迎单人榜单",
+                "awardList": [
+                  {
+                    "name": "[bilibili · 2023年度最受欢迎收藏集创作者]",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/ORv9Klwo5k.png"
+                  },
+                  {
+                    "name": "冠军奖金：10000元\n亚军奖金：8000元\n季军奖金：5000元",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/lY4wZ1nzUo.png"
+                  },
+                  {
+                    "name": "[站内]100万曝光\n[站外]百联zx大屏投放一周",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/InTzLBKVw8.png"
+                  }
+                ]
+              },
+              {
+                "name": "团体",
+                "value": 12,
+                "awardTittle": "最受欢迎团体冠军奖励",
+                "rankTittle": "最受欢迎团体榜单",
+                "awardList": [
+                  {
+                    "name": "实体奖牌",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/UVHRYLMTik.png"
+                  },
+                  {
+                    "name": "[bilibili · 2023年度最受欢迎收藏集创作者]",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/ORv9Klwo5k.png"
+                  },
+                  {
+                    "name": "冠军奖金：10000元\n亚军奖金：8000元\n季军奖金：5000元",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/lY4wZ1nzUo.png"
+                  },
+                  {
+                    "name": "[站内]100万曝光\n[站外]百联zx大屏投放一周",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/InTzLBKVw8.png"
+                  }
+                ]
+              }
+            ],
+            "_index": 0
+          },
+          {
+            "name": "粉丝呼声最高",
+            "value": 101,
+            "subTabs": [
+              {
+                "name": "单人",
+                "value": 11,
+                "awardTittle": "粉丝呼声最高单人冠军奖励",
+                "rankTittle": "粉丝呼声最高单人榜单",
+                "awardList": [
+                  {
+                    "name": "实体奖牌",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/UVHRYLMTik.png"
+                  },
+                  {
+                    "name": "冠军奖金：10000元\n亚军奖金：8000元\n季军奖金：5000元",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/lY4wZ1nzUo.png"
+                  },
+                  {
+                    "name": "[站内]100万曝光\n            [站外]百联zx大屏投放一周",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/InTzLBKVw8.png"
+                  }
+                ]
+              },
+              {
+                "name": "团体",
+                "value": 12,
+                "awardTittle": "粉丝呼声最高团体冠军奖励",
+                "rankTittle": "粉丝呼声最高团体榜单",
+                "awardList": [
+                  {
+                    "name": "实体奖牌",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/UVHRYLMTik.png"
+                  },
+                  {
+                    "name": "[bilibili · 2023年度粉丝呼声最高收藏集创作者]",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/ORv9Klwo5k.png"
+                  },
+                  {
+                    "name": "冠军奖金：10000元\n亚军奖金：8000元\n季军奖金：5000元",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/lY4wZ1nzUo.png"
+                  },
+                  {
+                    "name": "[站内]100万曝光\n            [站外]百联zx大屏投放一周",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/InTzLBKVw8.png"
+                  }
+                ]
+              }
+            ],
+            "_index": 1
+          },
+          {
+            "name": "更多榜单",
+            "value": 200,
+            "subTabs": [
+              {
+                "name": "最具潜力",
+                "value": 21,
+                "awardTittle": "最具潜力冠军奖励",
+                "rankTittle": "最具潜力榜单",
+                "awardList": [
+                  {
+                    "name": "实体奖牌",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/UVHRYLMTik.png"
+                  },
+                  {
+                    "name": "[bilibili · 2023年度最具潜力收藏集创作者]",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/ORv9Klwo5k.png"
+                  },
+                  {
+                    "name": "奖金最高1万元",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/lY4wZ1nzUo.png"
+                  },
+                  {
+                    "name": "[站内]50万曝光",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/InTzLBKVw8.png"
+                  }
+                ]
+              },
+              {
+                "name": "最具爆发力",
+                "value": 22,
+                "awardTittle": "最具爆发力冠军奖励",
+                "rankTittle": "最具爆发力榜单",
+                "awardList": [
+                  {
+                    "name": "实体奖牌",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/UVHRYLMTik.png"
+                  },
+                  {
+                    "name": "[bilibili · 2023年度最具爆发力收藏集创作者]",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/ORv9Klwo5k.png"
+                  },
+                  {
+                    "name": "奖金最高1万元",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/lY4wZ1nzUo.png"
+                  },
+                  {
+                    "name": "[站内]50万曝光",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/InTzLBKVw8.png"
+                  }
+                ]
+              },
+              {
+                "name": "最佳创意",
+                "value": 23,
+                "awardTittle": "最佳创意冠军奖励",
+                "rankTittle": "最佳创意榜单",
+                "awardList": [
+                  {
+                    "name": "实体奖牌",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/UVHRYLMTik.png"
+                  },
+                  {
+                    "name": "[bilibili · 2023年度最佳创意收藏集创作者]",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/ORv9Klwo5k.png"
+                  },
+                  {
+                    "name": "奖励价值1万元的营销预算",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/lY4wZ1nzUo.png"
+                  },
+                  {
+                    "name": "[站内]50万曝光",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/InTzLBKVw8.png"
+                  }
+                ]
+              },
+              {
+                "name": "最佳娱乐",
+                "awardTittle": "最佳娱乐冠军奖励",
+                "rankTittle": "最佳娱乐榜单",
+                "value": 24,
+                "awardList": [
+                  {
+                    "name": "实体奖牌",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/UVHRYLMTik.png"
+                  },
+                  {
+                    "name": "[bilibili · 2023年度最佳娱乐藏集创作者]",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/ORv9Klwo5k.png"
+                  },
+                  {
+                    "name": "定制一套全新收藏集",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/lY4wZ1nzUo.png"
+                  },
+                  {
+                    "name": "[站内]50万曝光",
+                    "image": "https://i0.hdslb.com/bfs/activity-plat/static/20231130/d3de01ea5b5200083302ca865c89375d/InTzLBKVw8.png"
+                  }
+                ]
+              }
+            ],
+            "_index": 2
+          }
+        ]
+      },
+      "async": {}
+    }
+  }
+}

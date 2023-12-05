@@ -15,7 +15,7 @@ export interface ICurMainTab {
   _index?: number;
   name: string;
   value?: number;
-  subTabs?: ICurSubTab[]
+  subTabs: ICurSubTab[]
 }
 
 export interface ICurSubTab {
