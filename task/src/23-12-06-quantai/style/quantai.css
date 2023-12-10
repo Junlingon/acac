@@ -1,0 +1,13 @@
+.bubble {
+    background-color: #f9dc48;
+    display: inline-block;
+    padding: 8px 16px 8px 16px;
+    box-sizing: border-box;
+    transform: skew(-20deg);
+    margin: 20px;
+    border-radius: 10px 30px 10px 10px;
+}
+
+.text{
+    transform: skew(20deg);
+}
