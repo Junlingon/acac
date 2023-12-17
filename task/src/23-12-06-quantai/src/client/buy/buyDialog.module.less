@@ -1,0 +1,83 @@
+// 弹窗
+.buyDialogWrapper {
+  width: 750px;
+  height: 962px;
+  background: url('https://i0.hdslb.com/bfs/activity-plat/static/20231208/55e8b7702babcaa954cb4a844e5ce05e/APWiTIgGzf.png')
+    no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
+
+  .rewardsList {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 57px;
+    height: 480px;
+    margin-top: 300px;
+    overflow-y: scroll;
+
+    li {
+      position: relative;
+      text-align: center;
+      margin: 0 20px;
+      margin-bottom: 10px;
+
+      img {
+        width: 196px;
+        height: 273px;
+        vertical-align: top;
+      }
+
+      .name {
+        width: 190px;
+        text-align: center;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 400;
+        letter-spacing: 1.32px;
+        margin-top: 11px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      .num {
+        position: absolute;
+        right: -2px;
+        top: -2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 26px;
+        color: #ffed47;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 6px;
+        border: 1px solid rgba(252, 252, 252, 0.2);
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(4px);
+      }
+    }
+  }
+
+  .button {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 334px;
+    height: 86px;
+    margin: 30px auto 0;
+    background: url('https://activity.hdslb.com/blackboard/static/XMCzZU1Z2n.png')
+      no-repeat;
+    background-size: contain;
+  }
+}

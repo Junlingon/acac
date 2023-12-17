@@ -1,0 +1,254 @@
+.rankWrapper {
+  position:relative;
+  top:0;
+  left: 0;
+  width: 678px;
+  margin: 28px auto 0;
+
+  .title {
+    width: 100%;
+    height: 92px;
+    background: url('https://activity.hdslb.com/blackboard/static/AUwG5NNr7Q.png') no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    .titleContent {
+      position: absolute;
+      top: 22px;
+      left: 26px;
+      display: flex;
+      flex-direction: row;
+      align-items: normal;
+      justify-content: flex-start;
+
+      .title {
+        width: 42px;
+        height: 44px;
+        background: url('https://activity.hdslb.com/blackboard/static/2tL69qjSaF.png') no-repeat;
+        background-size: contain;
+      }
+
+      .text {
+        width: 146px;
+        height: 35px;
+        background: url('https://activity.hdslb.com/blackboard/static/ShGj6RApzt.png') no-repeat;
+        background-size: contain;
+        margin-left: 15px;
+      }
+    }
+  }
+
+  .content {
+    background: url('https://activity.hdslb.com/blackboard/static/whwS6pdK0z.png') repeat-y;
+    background-size: contain;
+    padding-bottom: 20px;
+
+    .top {
+      width: 626px;
+      height: 274px;
+      margin: 0 auto;
+      background: url('https://activity.hdslb.com/blackboard/static/gMaVFP6WuT.png') repeat-y;
+      background-size: contain;
+    }
+
+    .rankNumber {
+      width: 50px;
+      color: #49FFF4;
+      font-size: 28px;
+      font-style: italic;
+      font-weight: 700;
+      margin-left: 32px;
+      flex-shrink: 0;
+    }
+
+    .rankAvatar {
+      width: 64px;
+      height: 64px;
+      flex-shrink: 0;
+      border-radius: 32px;
+      border: 1px solid #49FFF4;
+      background: #FFBF85;
+      margin-left: 12px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        vertical-align: top;
+      }
+    }
+
+    .rankName {
+      color: #FFF;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 24px; /* 100% */
+      flex: 1;
+      margin-left: 12px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      text-align: left;
+    }
+
+    .scoreWrapper {
+      margin-right: 48px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      margin-left: 10px;
+
+      .score {
+        color: #F69;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 100% */
+        margin-right: 7px;
+        max-width: 90px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        flex-shrink: 0;
+      }
+      .text {
+        color: #FFF;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 100% */
+      }
+    }
+
+    .rankList {
+      width: 626px;
+      margin: 0 auto;
+      background-color: #264a98;
+      overflow: hidden;
+
+      .listTitle {
+        text-align: center;
+        color: #FFF;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 28px; /* 100% */
+      }
+
+      .listDesc {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.80);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px; /* 100% */
+        margin-top: 10px;
+      }
+
+      .list {
+        margin-top:24px;
+
+        li {
+          width: 562px;
+          height: 96px;
+          border-radius: 24px;
+          border: 1px solid rgba(138, 241, 255, 0.30);
+          background: rgba(245, 255, 252, 0.10);
+          margin: 0 auto 12px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          overflow: hidden;
+        }
+      }
+    }
+    .action {
+      color: rgba(255, 255, 255, 0.80);
+      text-align: center;
+      font-family: PingFang SC;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px; /* 100% */
+      margin-top: 28px;
+
+      .actionContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 200px;
+        margin: 0 auto;
+
+        .icon {
+          width: 21px;
+          height: 20px;
+          background: url('https://activity.hdslb.com/blackboard/static/c5Xi97IFjO.png') no-repeat;
+          background-size: contain;
+          margin-right: 2px;
+
+          &.collapse {
+            transform: rotate(180deg);
+            margin-top: -3px;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom {
+    width: 100%;
+    height: 36px;
+    background: url('https://activity.hdslb.com/blackboard/static/pEbFM5RFfH.png') no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .mineWrapper {
+    height: 128px;
+    flex-shrink: 0;
+    border-radius: 0 0 24px 24px;
+    background: linear-gradient(180deg, rgba(137, 227, 255, 0.00) 0%, rgba(98, 227, 255, 0.20) 23.02%, #56F5FF 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .mine {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      width: 626px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .rankNumber {
+      width: 90px;
+      color: #28E5FF;
+      margin-left: 70px;
+    }
+
+    .scoreInfo {
+      margin: 0 80px 0 10px;
+      flex-shrink: 0;
+    }
+
+    .scoreWrapper{
+      margin-right: 0;
+    }
+
+    .userRankDesc {
+      color: #FFF;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 18px; /* 100% */
+      margin-top: 10px;
+    }
+
+  }
+}

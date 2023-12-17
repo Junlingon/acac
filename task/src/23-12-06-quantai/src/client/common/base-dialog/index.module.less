@@ -1,0 +1,80 @@
+.dialogContainer {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+
+  .close {
+    width: 66px;
+    height: 66px;
+    background: url('https://activity.hdslb.com/blackboard/static/TT3DkB8KcI.png')
+      no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 70px;
+    right: 114px;
+  }
+}
+
+/* ----------- iPad Air----------- */
+// 横屏
+@media only screen and (min-device-width: 820px) and (max-device-width: 1180px) and (orientation: portrait) {
+  .dialogContainer {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+// 竖屏
+@media only screen and (min-device-width: 820px) and (max-device-width: 1180px) and (orientation: landscape) {
+  .dialogContainer {
+    transform: translate(-50%, -50%) scale(0.65);
+  }
+}
+
+/* ----------- iPad 1, 2, Mini----------- */
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+// 横屏
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .dialogContainer {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+// 竖屏
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .dialogContainer {
+    transform: translate(-50%, -50%) scale(0.65);
+  }
+}
+
+/* ----------- iPad Pro 10.5" ----------- */
+
+/* Portrait */
+@media only screen and (min-device-width: 834px) and (max-device-width: 834px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .dialogContainer {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+@media only screen and (min-device-width: 1112px) and (max-device-width: 1112px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .dialogContainer {
+    transform: translate(-50%, -50%) scale(0.65);
+  }
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+/* Portrait */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .dialogContainer {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .dialogContainer {
+    transform: translate(-50%, -50%) scale(0.65);
+  }
+}
